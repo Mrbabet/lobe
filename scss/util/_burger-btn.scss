@@ -1,0 +1,35 @@
+.burger-btn {
+  position: relative;
+  z-index: 100;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 30px;
+  height: 40px;
+  .burger-bars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+  }
+  .burger-bars:after,
+  .burger-bars::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+  }
+  .burger-bars:after {
+    transform: translateY(-6px);
+  }
+  .burger-bars::before {
+    transform: translateY(6px);
+  }
+  //burger button animations
+}

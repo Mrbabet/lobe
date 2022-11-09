@@ -4,15 +4,17 @@
   padding: 0;
   border: none;
   outline: none;
-  background-color: transparent;
-  width: 30px;
+  background-color: #eef0f2;
+  border-radius: 50%;
+  width: 40px;
   height: 40px;
   .burger-bars {
     position: relative;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     background-color: black;
-    width: 100%;
+    width: 50%;
     height: 2px;
     border-radius: 10px;
   }

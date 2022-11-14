@@ -1,7 +1,56 @@
-main {
-  .hero {
-    .wrapper {
-      padding: 32px;
+.hero {
+  padding-block: 123px;
+
+  .wrapper {
+    height: 100%;
+    margin: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-video {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    video {
+      width: 400px;
+      max-width: 400px;
+    }
+  }
+  .hero-text {
+    margin-top: -60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section-2,
+.section-3 {
+  .wrapper {
+    margin: 32px 24px;
+  }
+}
+.section-2,
+.section-4,
+.section-5 {
+  background-color: #f2f3f5;
+}
+.section-2 {
+  .description {
+    .box {
+      display: flex;
+      gap: 1rem;
+      .box-icon {
+        img {
+          width: 80px;
+          border-radius: 12px;
+        }
+      }
     }
   }
 }

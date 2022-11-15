@@ -27,12 +27,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .button-container {
+      display: flex;
+      gap: 1rem;
+      button {
+        height: 42px;
+        width: 148px;
+      }
+      .color-button {
+        background-color: #04ddb2;
+        outline: 0;
+        border: 0;
+        border-radius: 99vh;
+        color: white;
+      }
+    }
   }
 }
 .section-2,
 .section-3 {
   .wrapper {
     margin: 32px 24px;
+    padding-block: 32px;
   }
 }
 .section-2,
@@ -41,6 +57,9 @@
   background-color: #f2f3f5;
 }
 .section-2 {
+  .section-2-image {
+    margin-block: 48px;
+  }
   .description {
     .box {
       display: flex;

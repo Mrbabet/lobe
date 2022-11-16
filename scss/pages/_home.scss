@@ -3,7 +3,7 @@
 
   .wrapper {
     height: 100%;
-    margin: 32px 24px;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +71,18 @@
           border-radius: 12px;
         }
       }
+    }
+  }
+  .tip-cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 2rem;
+    .card {
+      min-width: 250px;
+      min-height: 290px;
+      background-color: white;
+      border-radius: 24px;
+      padding: 24px;
     }
   }
 }

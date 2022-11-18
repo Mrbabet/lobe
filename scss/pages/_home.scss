@@ -76,13 +76,22 @@
   .tip-cards {
     display: flex;
     overflow-x: scroll;
+    justify-content: flex-start;
     gap: 2rem;
+
     .card {
-      min-width: 250px;
+      min-width: 272px;
       min-height: 290px;
       background-color: white;
       border-radius: 24px;
       padding: 24px;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        video {
+          width: 60%;
+        }
+      }
     }
   }
 }

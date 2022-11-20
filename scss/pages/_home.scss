@@ -114,3 +114,13 @@
     }
   }
 }
+.section-3 {
+  .video-container {
+    display: flex;
+    justify-content: center;
+    video {
+      width: 600px;
+      max-width: 600px;
+    }
+  }
+}

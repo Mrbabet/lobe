@@ -1,3 +1,6 @@
+.color-header {
+  color: #04ddb2;
+}
 .hero {
   padding-block: 123px;
 
@@ -91,6 +94,22 @@
         video {
           width: 60%;
         }
+      }
+      .status-color {
+        margin: 0 auto;
+        width: max-content;
+        padding-inline: 1rem;
+        border-radius: 99vh;
+        background-color: #04ddb2;
+        color: white;
+      }
+      .status {
+        margin: 0 auto;
+        width: max-content;
+        padding-inline: 1rem;
+        border-radius: 99vh;
+        background-color: #eef0f2;
+        color: #333;
       }
     }
   }

@@ -2,11 +2,10 @@ header {
   width: 100%;
   position: fixed;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   .wrapper {
-    margin: 32px 24px;
+    padding: 32px 24px;
     display: flex;
     @media screen and (max-width: 800px) {
       justify-content: space-between;

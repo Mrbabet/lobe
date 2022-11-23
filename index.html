@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/dist/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="wrapper">
         <div class="logo">
           <svg
@@ -91,14 +91,15 @@
             <button>Download</button>
           </div>
           <div class="mobile-navigation">
-            <ul>
+            <div class="mobile-navigation-blur"></div>
+            <ul class="header-blur">
               <li>Overview</li>
               <li>Examples</li>
               <li>Tour</li>
               <li>Blog</li>
               <li>Help</li>
+              <button>Download</button>
             </ul>
-            <button>Download</button>
           </div>
         </nav>
       </div>
@@ -491,5 +492,6 @@
         </div>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

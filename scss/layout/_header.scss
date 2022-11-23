@@ -1,9 +1,12 @@
+.header.unactive {
+}
 header {
   width: 100%;
   position: fixed;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+
+  transition: 400ms ease-in;
+
   .wrapper {
     padding: 32px 24px;
     display: flex;

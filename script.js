@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector(".burger-btn");
 const hiddenMenu = document.querySelector(".mobile-navigation");
-const blurMenu = document.querySelector(".mobile-navigation-blur");
+const blurMenu = document.querySelector(".navigation-blur");
 const blurHeader = document.querySelector(".header-blur");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {

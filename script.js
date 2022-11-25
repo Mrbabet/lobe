@@ -18,3 +18,5 @@ menuBtn.addEventListener("click", function () {
   blurMenu.classList.toggle("active");
   blurHeader.classList.toggle("active");
 });
+
+let video1 = document.getElementById("myVideo").autoplay;

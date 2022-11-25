@@ -27,9 +27,7 @@ const hideScroll = document.querySelector("body");
 
 function init() {
   setTimeout(() => {
-    loader.style.opacity = 0;
     loader.style.display = "none";
-    hideScroll.style.display = "block";
 
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);

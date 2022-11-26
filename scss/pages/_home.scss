@@ -16,14 +16,18 @@
     overflow: hidden;
   }
   .hero-video {
+    display: block;
     padding-top: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
     video {
       width: 400px;
       max-width: 400px;
+      visibility: visible;
+      object-fit: contain;
     }
   }
   .hero-text {

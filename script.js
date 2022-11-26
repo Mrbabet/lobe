@@ -19,8 +19,6 @@ menuBtn.addEventListener("click", function () {
   blurHeader.classList.toggle("active");
 });
 
-let video1 = document.getElementById("myVideo").autoplay;
-
 const loader = document.querySelector(".loader-wrapper");
 const main = document.querySelector("main");
 const hideScroll = document.querySelector("body");

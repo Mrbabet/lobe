@@ -1,3 +1,7 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .color-header {
   color: #04ddb2;
 }
@@ -334,16 +338,18 @@ footer {
   }
 }
 .section-5 {
-  .carousel-slider-right,
-  .carousel-slider-left {
+  .carousel-slider-right {
     .slide-track {
       display: flex;
       gap: 1rem;
-      width: calc(300px * 16);
+      width: calc(300px * 32);
       animation: scroll-left 180s linear infinite;
       .slide {
         height: 190px;
         width: 280px;
+        @media screen and (min-width: 800px) {
+          transition: 200ms ease-in-out;
+        }
 
         img {
           width: 100%;
@@ -351,10 +357,13 @@ footer {
           border-radius: 20px;
         }
       }
+      .slide:hover {
+        @media screen and (min-width: 800px) {
+          scale: 1.1;
+          transition: 200ms ease-in-out;
+        }
+      }
     }
-  }
-  .carousel-slider-right {
-    animation: scroll-left 120s linear infinite;
   }
 
   @keyframes scroll-left {
@@ -362,7 +371,44 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-300px * 8));
+      transform: translateX(calc(-280px * 16));
+    }
+  }
+  .carousel-slider-left {
+    padding-top: 1rem;
+    position: relative;
+    .slide-track {
+      display: flex;
+      gap: 1rem;
+      width: calc(300px * 32);
+      animation: scroll-right 180s linear infinite;
+      .slide {
+        height: 190px;
+        width: 280px;
+        @media screen and (min-width: 800px) {
+          transition: 200ms ease-in-out;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+        }
+      }
+      .slide:hover {
+        @media screen and (min-width: 800px) {
+          scale: 1.1;
+          transition: 200ms ease-in-out;
+        }
+      }
+    }
+  }
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(calc(-280px * 15));
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 }
@@ -433,6 +479,7 @@ footer {
     gap: 2rem;
   }
   .footer-sc {
+    justify-content: flex-end;
     .sc-icon {
       width: 40px;
       height: 40px;

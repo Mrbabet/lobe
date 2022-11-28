@@ -5,7 +5,8 @@ header {
   transition: 400ms ease-in;
 
   .wrapper {
-    padding: 32px 24px;
+    height: 80px;
+    padding: 16px 24px;
     display: flex;
     @media screen and (max-width: 800px) {
       justify-content: space-between;

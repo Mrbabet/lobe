@@ -8,6 +8,9 @@ body {
 .hero {
   min-height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .wrapper {
     padding: 32px 24px;
@@ -17,11 +20,9 @@ body {
     align-items: center;
     overflow: hidden;
     @media screen and (min-width: 900px) {
-      padding: 0;
-      width: 1000px;
+      max-width: 1100px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+
       flex-direction: row-reverse;
     }
   }
@@ -50,6 +51,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 900px) {
+      text-align: left;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
     .button-container {
       display: flex;
       gap: 1rem;
@@ -82,9 +88,15 @@ body {
 .section-5,
 .section-6,
 footer {
+  display: flex;
+  justify-content: center;
   .wrapper {
     padding: 32px 24px;
     padding-block: 32px;
+
+    @media screen and (min-width: 900px) {
+      max-width: 1100px;
+    }
   }
 }
 
@@ -115,6 +127,9 @@ footer {
     overflow-x: scroll;
     justify-content: flex-start;
     gap: 2rem;
+    @media screen and (min-width: 900px) {
+      justify-content: center;
+    }
 
     .card {
       min-width: 272px;
@@ -179,6 +194,9 @@ footer {
     display: flex;
     justify-content: flex-start;
     gap: 1.5rem;
+    @media screen and (min-width: 900px) {
+      justify-content: center;
+    }
     .testimonial-card {
       background-color: white;
       width: 272px;

@@ -464,6 +464,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+    }
   }
   .footer-about,
   .footer-general,
@@ -477,6 +480,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+
       li {
         display: flex;
         flex-direction: column;
@@ -519,5 +523,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
   }
 }

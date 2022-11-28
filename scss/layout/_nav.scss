@@ -48,17 +48,24 @@ header {
           display: flex;
           align-items: center;
           list-style: none;
+          font-weight: 700;
+          color: #767676;
           li {
             padding-inline: 1.8vmax;
           }
         }
-        button {
+        .header-button {
           width: 129px;
           height: 48px;
           border-radius: 99vh;
           background-color: #eef0f2;
           border: 0;
           outline: 0;
+          font-weight: 700;
+        }
+        .header-button.color-green {
+          background-color: #04ddb2;
+          color: white;
         }
       }
       @media screen and (max-width: 800px) {

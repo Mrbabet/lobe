@@ -33,3 +33,14 @@ function init() {
 }
 
 init();
+
+function changeColor() {
+  let buttonColor = document.querySelector(".header-button");
+  let scrollValue = window.scrollY;
+  if (scrollValue < 150) {
+    buttonColor.classList.remove("color-green");
+  } else {
+    buttonColor.classList.add("color-green");
+  }
+}
+window.addEventListener("scroll", changeColor);

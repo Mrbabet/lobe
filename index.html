@@ -129,7 +129,7 @@
           <div class="hero-text">
             <h1>
               <span>Train apps to</span><br />
-              <div class="color-header">count reps</div>
+              <span class="color-header"></span>
             </h1>
             <p>Create machine learning models with a free, easy to use tool.</p>
             <div class="button-container">
@@ -709,5 +709,21 @@
       </p>
     </div>
     <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".color-header", {
+        strings: [
+          "Identify plant",
+          "See gestures",
+          "Count reps",
+          "Feel emotions",
+          "Sense colors",
+          "Check safety",
+        ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

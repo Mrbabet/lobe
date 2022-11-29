@@ -113,9 +113,17 @@ footer {
     margin-block: 48px;
   }
   .description {
+    @media screen and (min-width: 900px) {
+      display: flex;
+      gap: 1rem;
+    }
     .box {
       display: flex;
       gap: 1rem;
+      @media screen and (min-width: 900px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
       .box-icon {
         img {
           min-width: 40px;

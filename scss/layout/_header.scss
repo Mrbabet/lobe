@@ -22,40 +22,4 @@ header {
       height: 22px;
     }
   }
-  .burger-btn {
-    @media screen and (min-width: 800px) {
-      display: none;
-    }
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eef0f2;
-    border: 0;
-    outline: 0;
-    .burger-bars {
-      position: relative;
-      margin: 0 auto;
-      width: 50%;
-      height: 2px;
-      border-radius: 10px;
-      background-color: black;
-    }
-    .burger-bars:after,
-    .burger-bars::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      left: 0;
-      height: 2px;
-      border-radius: 10px;
-      background-color: black;
-    }
-    .burger-bars::before {
-      transform: translateY(-6px);
-    }
-    .burger-bars::after {
-      transform: translateY(6px);
-    }
-  }
 }

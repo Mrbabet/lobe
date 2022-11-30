@@ -100,6 +100,12 @@ footer {
     @media screen and (min-width: 900px) {
       max-width: 1100px;
     }
+    @media screen and (min-width: 1700px) {
+      max-width: 1500px;
+    }
+    @media screen and (min-width: 2200px) {
+      max-width: 2000px;
+    }
   }
 }
 
@@ -111,6 +117,9 @@ footer {
 .section-2 {
   .section-2-image {
     margin-block: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .description {
     @media screen and (min-width: 900px) {
@@ -241,18 +250,29 @@ footer {
       border-radius: 15px;
       padding: 24px;
     }
+    .testimonial-card:nth-of-type(2) {
+      @media screen and (min-width: 1200px) {
+        margin-top: 3rem;
+      }
+    }
+    .testimonial-card:nth-of-type(3) {
+      @media screen and (min-width: 1200px) {
+        margin-top: 6rem;
+      }
+    }
   }
 }
 .section-4 {
   .bubbles {
     position: relative;
     height: 500px;
+
+    margin: 0 auto;
   }
   .media-container {
-    margin: 0 auto;
     position: relative;
-    display: flex;
-    align-content: stretch;
+    margin: 0 auto;
+    width: 600px;
     height: 100%;
 
     .media-box:nth-of-type(1) {

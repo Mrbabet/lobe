@@ -1,4 +1,7 @@
 .burger-btn {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
   position: relative;
   z-index: 100;
   padding: 0;
